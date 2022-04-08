@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: #2C7CB0;
+  color: #404E88;
+  padding: 30px;
+}
+
+.App {
+  width: 700px;
+  background-color: #B0DDC2;
+  border-radius: 8px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #F1F3F8;
+  border-radius: 8px;
+}
+
+.post__title {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.post__text {
+  font-family: 'Noto Serif', serif;
+}
