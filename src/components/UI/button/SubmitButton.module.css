@@ -1,0 +1,13 @@
+.submitButton {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(147, 236, 177);
+  color: #404E88;
+  font-family: 'Varela Round', sans-serif;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  background-color: rgb(220, 240, 235);
+  cursor: not-allowed;
+}

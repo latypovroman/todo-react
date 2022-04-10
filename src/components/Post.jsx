@@ -1,18 +1,23 @@
 import React from 'react';
+import MyButton from './UI/button/SubmitButton.jsx';
+const Post = ({data, index, handleRemovePost}) => {
 
-const Post = ({data}) => {
+  const handleDeleteClick = () => {
+    handleRemovePost(data)
+  }
+
   return (
     <div className="post">
       <div className="post__content">
-        <h1 className="post__title">{data.id}. {data.title}</h1>
+        <h1 className="post__title">{index}. {data.title}</h1>
         <p className="post__text">
-          {data.text}
+          {data.description}
         </p>
       </div>
       <div className="post__buttons">
-        <button>
+        <MyButton onClick={handleDeleteClick}>
           Delete
-        </button>
+        </MyButton>
       </div>
     </div>
   );

@@ -10,11 +10,11 @@
   background-color: #2C7CB0;
   color: #404E88;
   padding: 30px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .App {
   width: 700px;
-  background-color: #B0DDC2;
   border-radius: 8px;
 }
 
@@ -25,10 +25,7 @@
   padding: 10px;
   border: 2px solid #F1F3F8;
   border-radius: 8px;
-}
-
-.post__title {
-  font-family: 'Varela Round', sans-serif;
+  background-color: #B0DDC2;
 }
 
 .post__text {
