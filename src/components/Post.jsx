@@ -1,6 +1,7 @@
 import React from 'react';
 import MyButton from './UI/button/SubmitButton.jsx';
-const Post = ({data, index, handleRemovePost}) => {
+
+const Post = ({data, number, handleRemovePost}) => {
 
   const handleDeleteClick = () => {
     handleRemovePost(data)
@@ -9,7 +10,7 @@ const Post = ({data, index, handleRemovePost}) => {
   return (
     <div className="post">
       <div className="post__content">
-        <h1 className="post__title">{index}. {data.title}</h1>
+        <h1 className="post__title">{number}. {data.title}</h1>
         <p className="post__text">
           {data.description}
         </p>

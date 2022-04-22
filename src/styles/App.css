@@ -6,6 +6,7 @@
 
 #root {
   display: flex;
+  height: 100vh;
   justify-content: center;
   background-color: #2C7CB0;
   color: #404E88;
@@ -13,21 +14,11 @@
   font-family: 'Varela Round', sans-serif;
 }
 
-.App {
-  width: 700px;
-  border-radius: 8px;
-}
-
-.post {
+.app {
+  width: 1100px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 2px solid #F1F3F8;
-  border-radius: 8px;
-  background-color: #B0DDC2;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
 }
 
-.post__text {
-  font-family: 'Noto Serif', serif;
-}

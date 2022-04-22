@@ -1,0 +1,36 @@
+.todo {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  padding-top: 80px;
+}
+
+.todo__form {
+  margin-bottom: 40px;
+}
+
+.todo__title {
+  margin-bottom: 10px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #F1F3F8;
+  border-radius: 8px;
+  background-color: #B0DDC2;
+  margin-bottom: 5px;
+}
+
+.post:nth-last-of-type {
+  margin-bottom: 0;
+}
+
+.post__text {
+  font-family: 'Noto Serif', serif;
+}

@@ -1,0 +1,15 @@
+.header__title {
+  color: #1e1d1d;
+  font-size: 36px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header__subtitle {
+  color: #1e1d1d;
+}
+
+.header__logo {
+  width: auto;
+  height: 36px;
+}

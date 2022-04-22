@@ -5,9 +5,9 @@ const PostList = ({posts, handleRemovePost}) => {
 
   return (
     <div>
-      <h1>To Do List</h1>
+      <h1 className="todo__title">To Do List</h1>
       {posts.map((post, index) => {
-        return <Post handleRemovePost={handleRemovePost} index={index + 1} data={post} key={post.id} />
+        return <Post handleRemovePost={handleRemovePost} number={index + 1} data={post} key={post.id} />
       })}
     </div>
   );

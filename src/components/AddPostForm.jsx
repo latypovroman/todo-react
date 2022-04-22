@@ -38,10 +38,10 @@ const FormAddPost = ({handlePost}) => {
   }
 
   return (
-  <form>
+  <form className="todo__form">
     <MyInput value={post.title} onChange={handleChangeTitle} type="text" placeholder="Task name"></MyInput>
     <MyInput value={post.description} onChange={handleChangeDescription} type="textarea" placeholder="Task description"></MyInput>
-    <SubmitButton onClick={addNewPost}>Create TODO</SubmitButton>
+    <SubmitButton onClick={addNewPost}>Create TO DO</SubmitButton>
   </form>
   );
 };
