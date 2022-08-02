@@ -4,6 +4,7 @@ import PostList from "./PostList";
 import '../styles/Main.css';
 import FilterBar from "./FilterBar";
 import {usePosts} from "../hooks/usePosts";
+import Loader from "./UI/Loader/Loader";
 
 const Main = () => {
 
@@ -14,7 +15,12 @@ const Main = () => {
   ]);
   const [sort, setSort] = useState('');
   const [filter, setFilter] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
   const getFilteredSortedPosts = usePosts(posts, sort, filter);
+
+  React.useEffect(() => {
+    setIsLoading(false);
+  }, [])
 
   const handleRemovePost = (postForDelete) => {
     setPosts(posts.filter((post) => {
@@ -45,10 +51,9 @@ const Main = () => {
         filter={filter}
         filterPosts={filterPosts}
       />
-      {getFilteredSortedPosts.length !== 0
-        ? <PostList posts={getFilteredSortedPosts} handleRemovePost={handleRemovePost}/>
-        : filter ? <p className="todo__placeholder">Cant find such task</p>
-                 : <p className="todo__placeholder">You dont have any tasks for now. Use form to create one.</p>
+      { isLoading
+          ? <Loader/>
+          : <PostList posts={getFilteredSortedPosts} handleRemovePost={handleRemovePost} filter={filter}/>
       }
     </main>
   );
