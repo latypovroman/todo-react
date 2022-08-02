@@ -6,7 +6,7 @@
 
 #root {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   background-color: #2C7CB0;
   color: #404E88;

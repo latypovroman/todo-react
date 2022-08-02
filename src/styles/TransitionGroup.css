@@ -1,0 +1,21 @@
+/*.todo-enter {*/
+/*    opacity: 0;*/
+/*}*/
+/*.todo-enter-active {*/
+/*    opacity: 1;*/
+/*    transition: opacity 500ms ease-in;*/
+/*}*/
+.todo-enter {
+    transform: translateX(-100%);
+}
+.todo-enter-active {
+    transform: translateX(0);
+    transition: all 300ms ease-in;
+}
+.todo-exit {
+    transform: scale(1);
+}
+.todo-exit-active {
+    transform: scale(0.001);
+    transition: all 0.2s ease-in;
+}
